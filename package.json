@@ -1,0 +1,26 @@
+{
+  "scripts": {
+    "start": "concurrently --kill-others \"npm run rollup:w\" lite-server",
+    "lite": "lite-server",
+    "rollup": "rollup -c",
+    "rollup:w": "rollup -c -w",
+    "build": "npm run rollup"
+  },
+  "dependencies": {
+    "@types/cleave.js": "^1.4.6",
+    "cleave.js": "^1.6.0"
+  },
+  "devDependencies": {
+    "concurrently": "^3.1.0",
+    "lite-server": "^2.2.2",
+    "rollup": "^0.36.3",
+    "rollup-plugin-commonjs": "^5.0.5",
+    "rollup-plugin-filesize": "^1.0.0",
+    "rollup-plugin-node-resolve": "^2.0.0",
+    "rollup-plugin-replace": "^1.1.1",
+    "rollup-plugin-typescript": "^0.8.1",
+    "rollup-plugin-uglify": "^1.0.1",
+    "rollup-watch": "^2.5.0",
+    "typescript": "^2.0.3"
+  }
+}
